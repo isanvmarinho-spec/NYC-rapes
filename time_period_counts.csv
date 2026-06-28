@@ -1,0 +1,5 @@
+time_period,count
+"Overnight, 12am-5:59am",72
+"Morning, 6am-11:59am",54
+"Afternoon, 12pm-5:59pm",81
+"Evening, 6pm-11:59pm",104
