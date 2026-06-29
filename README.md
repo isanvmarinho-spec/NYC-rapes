@@ -29,7 +29,7 @@ Tktktktktkt
 
 
 Webpage: 
-tktktktkt
+(https://isanvmarinho-spec.github.io/NYC-rapes/)
 
 Findings: 
 The data shows that The Bronx accounts for most reported rapes in 2026 and a rape crime per capita twice as high as Brooklyn, which is second in number of rape reports. In addition, the data shows that depending on the borough, the majority of rapes occur in different moments of the day. The crime predominantly happens in a residence. 
