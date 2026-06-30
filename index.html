@@ -10,23 +10,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
         rel="stylesheet">
     <style>
         body {
             margin: 0;
             font-size: 20px;
             font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #222;
             text-rendering: optimizeLegibility;
         }
 
         .content {
-            max-width: 640px;
-            margin: auto;
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 0 24px;
         }
 
         .header {
-            padding: 3em 0;
+            padding: 3.5em 0 1.5em;
         }
 
         a {
@@ -35,21 +37,20 @@
 
         .footer {
             background: #f4f4f4;
-            text-align: center;
             font-size: 0.8em;
-            margin-top: 4em;
-            padding: 4em 0;
+            margin-top: 3em;
+            padding: 3em 0;
         }
 
         figure {
-            margin: 0;
-            padding-bottom: 1.2em;
+            margin: 2em 0;
         }
 
         figcaption {
             font-size: 0.8em;
             text-align: center;
-            margin-top: 0.5em;
+            line-height: 1.4;
+            margin-top: 0.75em;
             color: #666;
         }
 
@@ -58,10 +59,28 @@
             font-weight: bold;
             font-size: 3em;
             line-height: 1.1;
+            margin: 0 0 0.35em;
+        }
+
+        h2 {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 1.55em;
+            line-height: 1.25;
+            margin: 1.55em 0 0.75em;
         }
 
         .subhead {
             font-family: 'Lora', Georgia, serif;
+            font-size: 1.2em;
+            line-height: 1.45;
+            color: #555;
+            margin-bottom: 0;
+        }
+
+        .byline {
+            font-size: 0.9em;
+            margin-bottom: 2em;
+            color: #555;
         }
 
         iframe,
@@ -70,20 +89,43 @@
             max-width: 100%;
         }
 
+        img {
+            display: block;
+            height: auto;
+        }
+
+        .hero-image {
+            margin: 0 0 0.75em;
+        }
+
+        .article-image {
+            margin-top: 2.25em;
+        }
+
         p {
             line-height: 1.6;
-            margin: 0;
-            padding-bottom: 1.2em;
+            margin: 0 0 1.25em;
         }
 
         ul {
-            margin: 0;
-            padding-bottom: 1em;
+            margin: 0 0 1em;
             line-height: 1.6;
         }
 
-        iframe {
-            padding-bottom: 1.2em;
+        .chart {
+            margin: 1.5em 0 2.5em;
+        }
+
+        h2 + .chart {
+            margin-top: 1em;
+        }
+
+        p + .chart {
+            margin-top: 2em;
+        }
+
+        .chart + p {
+            margin-top: 0.5em;
         }
 
         code {
@@ -96,6 +138,10 @@
             text-align: center;
         }
 
+        .footer p {
+            margin-bottom: 0;
+        }
+
         /* margin on mobile */
         @media (max-width: 640px) {
             body {
@@ -103,40 +149,62 @@
             }
 
             .content {
-                padding-left: 0.5em;
-                padding-right: 0.5em;
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+
+            .header {
+                padding: 2.5em 0 1.25em;
+            }
+
+            h1 {
+                font-size: 2.25em;
+            }
+
+            h2 {
+                font-size: 1.35em;
+                margin-top: 1.4em;
+            }
+
+            .chart {
+                margin-bottom: 2em;
+            }
+
+            p + .chart {
+                margin-top: 1.6em;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="content">
-        <div class="header">
+    <main class="content">
+        <header class="header">
             <h1>Reported Rapes in NYC: Trends To Be Aware of in 2026</h1>
-            <p class="subhead">Most cases happened in The Bronx and inside a residence, according to NYPD data</p></div><div class="byline">
-    <figure>
-        <img src="https://ik.imgkit.net/3vlqs5axxjf/TW/ik-seo/uploadedImages/Art/Shutterstock_Art/2025/T0428STATUELIBERTY_SS/Despite-international-travel-decline-New-York-repo.jpg?n=3128&tr=w-780%2Ch-440%2Cfo-auto" alt="New York City skyline">
-                <figcaption>New York City skyline. Shutterstock.</figcaption>
-</figure>
-            <p>By <a href="https://isadoravarejao.com">Isadora Varejão </a> | June 28, 2026</p>
-        </div>
+            <p class="subhead">Most cases happened in The Bronx and inside a residence, according to NYPD data</p>
+        </header>
+
+        <figure class="hero-image">
+            <img src="https://ik.imgkit.net/3vlqs5axxjf/TW/ik-seo/uploadedImages/Art/Shutterstock_Art/2025/T0428STATUELIBERTY_SS/Despite-international-travel-decline-New-York-repo.jpg?n=3128&amp;tr=w-780%2Ch-440%2Cfo-auto" alt="New York City skyline">
+        </figure>
+
+        <p class="byline">By <a href="https://isadoravarejao.com">Isadora Varejão</a> | June 28, 2026</p>
 
         <p>A frequent travel destination among international and domestic tourists, New York City has everything going 
             for it in the summer of 2026: World Cup watch parties, a socialist-democratic mayor delivering on his campaign
-            promises, and a 6'2" king anointed by basketball fans. Between the viral pizzerias, free outdoor activities, 
-            and Broadway shows, tourists will have plenty to do.</p>
+            promises, and a 6ft2in king anointed by basketball fans. Between the viral pizzerias, free outdoor activities, 
+            and Broadway shows, tourists will have plenty to do. .</p>
 
         <p>But for a woman traveling solo, deciding where to go, with whom, and when might involve more research and risk 
             assessment. </p>
 
-        <p><a href="https://www.nsvrc.org/resource/national-intimate-partner-and-sexual-violence-survey-2015-data-brief-updated-release/">Research</a> says that one in five women in the U.S. will experience completed or attempted rape during their lifetime,
-            a figure similar to that of <a href="https://data.unwomen.org/global-database-on-violence-against-women/country-profile/Guatemala/country-snapshot">Guatemala</a> and <a href="https://data.unwomen.org/global-database-on-violence-against-women/country-profile/Cambodia/country-snapshot">Cambodia</a>. Thanks to the <a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Current-Year-To-Date-/5uac-w243/about_dataNY">New York Police Department's Complaint Data</a>, there is 
+        <p>Research says that one in five women in the U.S. will experience completed or attempted rape during their lifetime,
+            a figure similar to that of Guatemala and Cambodia. Thanks to the NY Police Department's Complaint Data, there is 
             information available about where and when reported rapes are happening in the city in 2026.</p>
 
-        <p><h2>Where are rapes mostly being reported in NYC?</h2></p>
+        <h2>Where are rapes mostly being reported in NYC?</h2>
 
-        <div style="min-height:861px" id="datawrapper-vis-bg5T4"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/bg5T4/embed.js" charset="utf-8" data-target="#datawrapper-vis-bg5T4"></script><noscript><img src="https://datawrapper.dwcdn.net/bg5T4/full.png" alt="Top 15 Precincts Where Rape Reports Were Filed in 2026 (Choropleth map)" /></noscript></div>
+        <div class="chart" style="min-height:861px" id="datawrapper-vis-bg5T4"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/bg5T4/embed.js" charset="utf-8" data-target="#datawrapper-vis-bg5T4"></script><noscript><img src="https://datawrapper.dwcdn.net/bg5T4/full.png" alt="Top 15 Precincts Where Rape Reports Were Filed in 2026 (Choropleth map)" /></noscript></div>
 
         <p>Of the 337 rapes registered with the NYPD in 2026, thirty percent were reported in The Bronx (101). Precinct 47 had
             the most reports in the borough. It covers the neighborhoods of Woodlawn, Wakefield, Williamsbridge, Baychester, 
@@ -146,44 +214,47 @@
             received 92 complaints in 2026. That is twenty-seven percent of all cases in NYC. But at 2.8 million residents, 
             almost twice as many as The Bronx, Brooklyn's rate of rapes per capita is dramatically lower than the first-ranked borough.</p>
 
-        <div><div style="min-height:206px" id="datawrapper-vis-gnjhQ"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/gnjhQ/embed.js" charset="utf-8" data-target="#datawrapper-vis-gnjhQ"></script><noscript><img src="https://datawrapper.dwcdn.net/gnjhQ/full.png" alt="Reported Rape Cases Per Capita (2026) (Range Plot)" /></noscript></div>
+        <div class="chart" style="min-height:206px" id="datawrapper-vis-gnjhQ"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/gnjhQ/embed.js" charset="utf-8" data-target="#datawrapper-vis-gnjhQ"></script><noscript><img src="https://datawrapper.dwcdn.net/gnjhQ/full.png" alt="Reported Rape Cases Per Capita (2026) (Range Plot)" /></noscript></div>
 
         <p>Queens had 76 reported cases, representing 23 percent. Manhattan had 53, representing 16 percent of total complaints. 
             Staten Island comes last with five percent of all rape cases reported in 2026: 15.</p>
         
-        <p><h2>Where exactly are rapes taking place?</h2>
+        <h2>Where exactly are rapes taking place?</h2>
         
-            <p>The data shows that 75 percent of rapes reportedly happened inside or near a residence. RAINN, an anti-sexual violence 
+        <p>The data shows that 75 percent of rapes reportedly happened inside or near a residence. RAINN, an anti-sexual violence 
             organization and operator of the National Sexual Assault Hotline, may provide some additional context. Based on data from the 
             Department of Justice, RAINN states that 68.5 percent of sexual assaults occur at or near the victim's home or their relative's home.</p>
             
-            <div style="min-height:845px" id="datawrapper-vis-A6yUr"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/A6yUr/embed.js" charset="utf-8" data-target="#datawrapper-vis-A6yUr"></script><noscript><img src="https://datawrapper.dwcdn.net/A6yUr/full.png" alt="Location of Reported Rapes in NYC (2026) (Stacked column chart)" /></noscript></div>
+        <div class="chart" style="min-height:845px" id="datawrapper-vis-A6yUr"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/A6yUr/embed.js" charset="utf-8" data-target="#datawrapper-vis-A6yUr"></script><noscript><img src="https://datawrapper.dwcdn.net/A6yUr/full.png" alt="Location of Reported Rapes in NYC (2026) (Stacked column chart)" /></noscript></div>
         
-        <p><h2>When have most reported rapes taken place?</h2></p>
+        <h2>When have most reported rapes taken place?</h2>
 
-        <div style="min-height:381px" id="datawrapper-vis-7U9Q6"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/7U9Q6/embed.js" charset="utf-8" data-target="#datawrapper-vis-7U9Q6"></script><noscript><img src="https://datawrapper.dwcdn.net/7U9Q6/full.png" alt="Times of Day in Which Reported Rapes Happened (%) (Table)" /></noscript></div>
+        <div class="chart" style="min-height:381px" id="datawrapper-vis-7U9Q6"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/7U9Q6/embed.js" charset="utf-8" data-target="#datawrapper-vis-7U9Q6"></script><noscript><img src="https://datawrapper.dwcdn.net/7U9Q6/full.png" alt="Times of Day in Which Reported Rapes Happened (%) (Table)" /></noscript></div>
   
         <p>The NYPD data doesn't tell a complete story: In 2015, the Department of Justice, through the Bureau of Justice Statistics, stated that 
-            two-thirds of completed rapes against females <a href="https://bjs.ojp.gov/content/pub/pdf/rsarp00.pdf"> were not reported to the police</a>. Shame, distrust in the criminal justice system, 
+            two-thirds of completed rapes against females were not reported to the police. Shame, distrust in the criminal justice system, 
             immigration status, fear of retaliation, and relationship to the perpetrator are common reasons.</p>
 
         <p>If you or someone you know has been a victim of sexual assault, call 911 or go to a precinct to file a report and ask for an investigation
-            to begin. You can also call the Rape, Abuse & Incest National Network (RAINN) to get advice and learn about your rights and options. 
+            to begin. You can also call the Rape, Abuse &amp; Incest National Network (RAINN) to get advice and learn about your rights and options. 
             Their free hotline is confidential and available 24 hours/day: 1-800-656-HOPE (4673).</p>
         
-        <figure>
+        <figure class="article-image">
             <img
                 src="https://www.worldofwanderlust.com/wp-content/uploads/2016/06/P6240030.jpg">
             <figcaption>In 2025, New York City hosted 65 million tourists in 2025, according to NYC Tourism + Conventions. Photo Credit: CK Foto/Shutterstock</figcaption>
         </figure>
-    <div class="footer">
+    </main>
+
+    <footer class="footer">
         <div class="content">
-        <p>Methodology: This project analyzed 2026 NYPD Complaint Data (Year To Date) sourced 
-        from NYC Open Data, focusing specifically on reported rape cases. The data was analyzed
-        using Python's pandas library to uncover total rape reports, distribution by 
-        borough and precinct, common incident locations, and peak time periods. Crime rates per 
-        capita and percentages were calculated to account for varying borough population sizes.
-        Datasets and analysis are available <a href="https://github.com/isanvmarinho-spec/NYC-rapes/tree/main">here</a>.</p>
-    </div>
+            <p>Methodology: This project analyzed 2026 NYPD Complaint Data (Year To Date) sourced
+                from NYC Open Data, focusing specifically on reported rape cases. The data was analyzed
+                using Python's pandas library to uncover total rape reports, distribution by
+                borough and precinct, common incident locations, and peak time periods. Crime rates per
+                capita and percentages were calculated to account for varying borough population sizes.
+                Datasets and analysis are available here.</p>
+        </div>
+    </footer>
 </body>
 </html>
